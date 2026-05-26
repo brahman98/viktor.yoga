@@ -1,33 +1,37 @@
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #0a0a0a;
+  color: #ffffff;
 }
 
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background: #0f0f0f;
-  color: white;
-}
-.home {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .hero {
-  text-align: center;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.hero h1 {
-  font-size: 56px;
+.hero__kicker {
+  font-size: 12px;
+  letter-spacing: 3px;
+  opacity: 0.6;
+}
+
+.hero__title {
+  font-size: 72px;
   font-weight: 700;
-  letter-spacing: 1px;
+  margin: 16px 0;
+  letter-spacing: -2px;
 }
 
-.hero p, .hero h2 {
-  margin-top: 12px;
+.hero__subtitle {
+  font-size: 16px;
   opacity: 0.7;
 }
